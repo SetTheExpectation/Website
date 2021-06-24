@@ -1,41 +1,49 @@
 var simplemaps_usmap_mapdata={
   main_settings: {
-   //General settings
-    width: "responsive", //'700' or 'responsive'
+    //General settings
+		width: "responsive", //or 'responsive'
     background_color: "#FFFFFF",
     background_transparent: "yes",
-    border_color: "#ffffff",
     popups: "detect",
-    state_description: "",
-    state_color: "#17adc1",
-    state_hover_color: "#34c3d6",
-    state_url: "",
-    border_size: "1",
+    
+		//State defaults
+		state_description: "State description",
+    state_color: "#88A4BC",
+    state_hover_color: "#3B729F",
+    state_url: "https://simplemaps.com",
+    border_size: 1.5,
+    border_color: "#ffffff",
     all_states_inactive: "no",
-    all_states_zoomable: "yes",
-    location_description: "",
-    location_color: "#7855a3",
-    location_opacity: "1",
+    all_states_zoomable: "no",
+    
+		//Location defaults
+		location_description: "Location description",
+    location_color: "#FF0067",
+    location_opacity: 0.8,
     location_hover_opacity: 1,
     location_url: "",
-    location_size: "20",
-    location_type: "circle",
-    location_image_source: "frog.png",
+    location_size: 25,
+    location_type: "square",
     location_border_color: "#FFFFFF",
     location_border: 2,
     location_hover_border: 2.5,
     all_locations_inactive: "no",
     all_locations_hidden: "no",
     
-    //Label defaults
-    label_color: "#ffffff",
-    label_hover_color: "#d5ddec",
-    label_size: "0",
-    label_font: "Open Sans",
+		//Label defaults
+		label_color: "#ffffff",
+    label_hover_color: "#ffffff",
+    label_size: 22,
+    label_font: "Arial",
     hide_labels: "no",
-    hide_eastern_labels: "no",
-    manual_zoom: "no",
+   
+		//Zoom settings
+		manual_zoom: "yes",
     back_image: "no",
+    arrow_box: "no",
+    navigation_size: "40",
+    navigation_color: "#f7f7f7",
+    navigation_border_color: "#636363",
     initial_back: "no",
     initial_zoom: -1,
     initial_zoom_solo: "no",
@@ -45,682 +53,442 @@ var simplemaps_usmap_mapdata={
     zoom_percentage: 0.99,
     zoom_time: 0.5,
     
-    //Popup settings
-    popup_color: "white",
+		//Popup settings
+		popup_color: "white",
     popup_opacity: 0.9,
     popup_shadow: 1,
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
     
-    //Advanced settings
-    div: "map",
+		//Advanced settings
+		div: "map",
     auto_load: "yes",
+    rotate: "0",
     url_new_tab: "yes",
-    images_directory: "/static/lib/simplemaps/map_images/",
-    fade_time: 0.1,
+    images_directory: "default",
     import_labels: "no",
-    link_text: "View Website",
-    state_image_url: "",
-    state_image_position: "",
-    location_image_url: ""
+    fade_time: 0.1,
+    link_text: "View Website"
   },
   state_specific: {
     HI: {
       name: "Hawaii",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     AK: {
-      name: "AlaskaHawaii",
-      inactive: "yes"
+      name: "Alaska",
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     FL: {
       name: "Florida",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default",
+      inactive: "no"
     },
     NH: {
       name: "New Hampshire",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     VT: {
       name: "Vermont",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     ME: {
       name: "Maine",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     RI: {
       name: "Rhode Island",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     NY: {
       name: "New York",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     PA: {
       name: "Pennsylvania",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     NJ: {
       name: "New Jersey",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     DE: {
       name: "Delaware",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     MD: {
       name: "Maryland",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     VA: {
       name: "Virginia",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     WV: {
       name: "West Virginia",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     OH: {
       name: "Ohio",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     IN: {
       name: "Indiana",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     IL: {
       name: "Illinois",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     CT: {
       name: "Connecticut",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     WI: {
       name: "Wisconsin",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     NC: {
       name: "North Carolina",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     DC: {
       name: "District of Columbia",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     MA: {
       name: "Massachusetts",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     TN: {
       name: "Tennessee",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     AR: {
       name: "Arkansas",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     MO: {
       name: "Missouri",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     GA: {
       name: "Georgia",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     SC: {
       name: "South Carolina",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     KY: {
       name: "Kentucky",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      zoomable: "no",
+      hover_color: "default",
+      url: "default"
     },
     AL: {
       name: "Alabama",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     LA: {
       name: "Louisiana",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     MS: {
       name: "Mississippi",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     IA: {
       name: "Iowa",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     MN: {
       name: "Minnesota",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     OK: {
       name: "Oklahoma",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     TX: {
       name: "Texas",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     NM: {
       name: "New Mexico",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     KS: {
       name: "Kansas",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     NE: {
       name: "Nebraska",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     SD: {
       name: "South Dakota",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     ND: {
       name: "North Dakota",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     WY: {
       name: "Wyoming",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     MT: {
       name: "Montana",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     CO: {
       name: "Colorado",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     UT: {
       name: "Utah",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     AZ: {
       name: "Arizona",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     NV: {
       name: "Nevada",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     OR: {
       name: "Oregon",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     WA: {
       name: "Washington",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     CA: {
       name: "California",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     MI: {
       name: "Michigan",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     ID: {
       name: "Idaho",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default"
     },
     GU: {
       name: "Guam",
-      hide: "yes",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default",
+      hide: "yes"
     },
     VI: {
       name: "Virgin Islands",
-      hide: "yes",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default",
+      hide: "yes"
     },
     PR: {
       name: "Puerto Rico",
-      hide: "yes",
-      inactive: "yes"
-    },
-    MP: {
-      name: "Northern Mariana Islands",
-      hide: "yes",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default",
+      hide: "yes"
     },
     AS: {
       name: "American Samoa",
-      hide: "yes",
-      inactive: "yes"
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default",
+      hide: "yes"
+    },
+    MP: {
+      name: "Northern Mariana Islands",
+      description: "default",
+      color: "default",
+      hover_color: "default",
+      url: "default",
+      hide: "yes"
     }
   },
   locations: {
     "0": {
-      lat: 33.454,
-      lng: -112.071,
-      name: "Arizona State University"
+      name: "New York",
+      lat: 40.71,
+      lng: -74,
+      description: "default",
+      color: "default",
+      url: "default",
+      type: "default",
+      size: "default"
     },
     "1": {
-      lat: 32.6,
-      lng: -85.488,
-      name: "Auburn University"
-    },
-    "2": {
-      lat: 31.547,
-      lng: -97.121,
-      name: "Baylor University "
-    },
-    "3": {
-      lat: 37.428,
-      lng: -122.17,
-      name: "Stanford"
-    },
-    "4": {
-      lat: 38.834,
-      lng: "-104.822",
-      name: "Air Force Academy"
-    },
-    "5": {
-      lat: 34.236,
-      lng: -118.529,
-      name: "California State University, Northridge (CSUN)"
-    },
-    "6": {
-      lat: 34.609,
-      lng: -98.433,
-      name: "Cameron University "
-    },
-    "7": {
-      lat: 43.591,
-      lng: -84.776,
-      name: "Central Michigan University "
-    },
-    "8": {
-      lat: 42.82,
-      lng: -75.536,
-      name: "Colgate University "
-    },
-    "9": {
-      lat: 42.086,
-      lng: -71.397,
-      name: "Dean College"
-    },
-    "10": {
-      lat: 38.414,
-      lng: -96.18,
-      name: "Emporia State University "
-    },
-    "11": {
-      lat: 40.861,
-      lng: -73.89,
-      name: "Fordham University "
-    },
-    "12": {
-      lat: 38.907,
-      lng: -77.073,
-      name: "Georgetown University "
-    },
-    "13": {
-      lat: 45.512,
-      lng: -122.684,
-      name: "Portland State University"
-    },
-    "14": {
-      lat: 38.899,
-      lng: -77.049,
-      name: "George Washington University "
-    },
-    "15": {
-      lat: 32.427,
-      lng: -81.784,
-      name: "Georgia Southern University "
-    },
-    "16": {
-      lat: 33.51,
-      lng: -112.13,
-      name: "Grand Canyon University "
-    },
-    "17": {
-      lat: 21.307,
-      lng: -157.866,
-      name: "Hawai’i Pacific University "
-    },
-    "18": {
-      lat: 38.923,
-      lng: -77.022,
-      name: "Howard University"
-    },
-    "19": {
-      lat: 42.862,
-      lng: -112.433,
-      name: "Idaho State University"
-    },
-    "20": {
-      lat: 39.166,
-      lng: -86.527,
-      name: "Indiana University "
-    },
-    "21": {
-      lat: 41.148,
-      lng: -81.349,
-      name: "Kent State University"
-    },
-    "22": {
-      lat: 40.374,
-      lng: -82.396,
-      name: "Kenyon College"
-    },
-    "23": {
-      lat: 44.259,
-      lng: -88.396,
-      name: "Lawrence University "
-    },
-    "24": {
-      lat: 38.788,
-      lng: -90.502,
-      name: "Lindenwood University "
-    },
-    "25": {
-      lat: 40.809,
-      lng: -73.802,
-      name: "Maritime College"
-    },
-    "26": {
-      lat: 41.724,
-      lng: -73.934,
-      name: "Marist College"
-    },
-    "27": {
-      lat: 30.181,
-      lng: -93.218,
-      name: "McNeese State University "
-    },
-    "28": {
-      lat: 35.844,
-      lng: -86.371,
-      name: "Middle Tennessee State University "
-    },
-    "29": {
-      lat: 33.456,
-      lng: -88.795,
-      name: "Mississippi State University "
-    },
-    "30": {
-      lat: 45.671,
-      lng: -111.05,
-      name: "Montana State University "
-    },
-    "31": {
-      lat: 40.857,
-      lng: -74.199,
-      name: "Montclair State University "
-    },
-    "32": {
-      lat: 41.511,
-      lng: -74.012,
-      name: "Mount Saint Mary College"
-    },
-    "33": {
-      lat: 35.785,
-      lng: -78.643,
-      name: "NC State University "
-    },
-    "34": {
-      lat: 35.194,
-      lng: -111.65,
-      name: "Northern Arizona University "
-    },
-    "35": {
-      lat: 40.006,
-      lng: -83.016,
-      name: "Ohio State University "
-    },
-    "36": {
-      lat: 44.565,
-      lng: -123.28,
-      name: "Oregon State University "
-    },
-    "37": {
-      lat: 40.794,
-      lng: -77.861,
-      name: "Penn State University "
-    },
-    "38": {
-      lat: 35.189,
-      lng: -80.833,
-      name: "Queens University of Charlotte"
-    },
-    "39": {
-      lat: 29.721,
-      lng: -95.394,
-      name: "Rice University "
-    },
-    "40": {
-      lat: 40.501,
-      lng: -74.449,
-      name: "Rutgers University "
-    },
-    "41": {
-      lat: 38.561,
-      lng: -121.424,
-      name: "Sacramento State University "
-    },
-    "42": {
-      lat: 37.334,
-      lng: -121.881,
-      name: "San Jose State University "
-    },
-    "43": {
-      lat: 40.743,
-      lng: -74.247,
-      name: "Seton Hall University "
-    },
-    "44": {
-      lat: 39.98,
-      lng: -75.157,
-      name: "Temple University "
-    },
-    "45": {
-      lat: 32.824,
-      lng: -96.79,
-      name: "Southern Methodist University (SMU)"
-    },
-    "46": {
-      lat: 37.677,
-      lng: -113.068,
-      name: "Southern Utah University "
-    },
-    "47": {
-      lat: 30.617,
-      lng: -96.336,
-      name: "Texas A&M "
-    },
-    "48": {
-      lat: 29.937,
-      lng: -90.122,
-      name: "Tulane University "
-    },
-    "49": {
-      lat: 36.063,
-      lng: -94.158,
-      name: "University of Arkansas"
-    },
-    "50": {
-      lat: 37.871,
-      lng: -122.26,
-      name: "University of California, Berkley"
-    },
-    "51": {
-      lat: 53.031,
-      lng: 8.216,
-      name: "University of Colorado"
-    },
-    "52": {
-      lat: 41.81,
-      lng: -72.253,
-      name: "University of Connecticut"
-    },
-    "53": {
-      lat: 29.645,
-      lng: -82.35,
-      name: "University of Florida"
-    },
-    "54": {
-      lat: 29.719,
-      lng: -95.338,
-      name: "University of Houston "
-    },
-    "55": {
-      lat: 38.215,
-      lng: -85.762,
-      name: "University of Louisville"
-    },
-    "56": {
-      lat: 25.713,
-      lng: -80.277,
-      name: "University of Miami"
-    },
-    "57": {
-      lat: 42.276,
-      lng: -83.741,
-      name: "University of Michigan"
-    },
-    "58": {
-      lat: 44.976,
-      lng: -93.231,
-      name: "University of Minnesota"
-    },
-    "59": {
-      lat: 47.802,
-      lng: -96.611,
-      name: "University of Minnesota, Crookston"
-    },
-    "60": {
-      lat: 46.861,
-      lng: -113.981,
-      name: "University of Montana"
-    },
-    "61": {
-      lat: 36.066,
-      lng: -79.813,
-      name: "University of North Carolina, Greensboro (UNCG)"
-    },
-    "62": {
-      lat: 34.226,
-      lng: -77.88,
-      name: "University of North Carolina, Wilmington "
-    },
-    "63": {
-      lat: 47.924,
-      lng: -97.081,
-      name: "University of North Dakota"
-    },
-    "64": {
-      lat: 41.699,
-      lng: -86.238,
-      name: "University of Notre Dame "
-    },
-    "65": {
-      lat: 35.21,
-      lng: -97.446,
-      name: "University of Oklahoma "
-    },
-    "66": {
-      lat: 44.046,
-      lng: -123.07,
-      name: "University of Oregon "
-    },
-    "67": {
-      lat: 45.766,
-      lng: -93.483,
-      name: "University of South Carolina "
-    },
-    "68": {
-      lat: 30.695,
-      lng: -88.174,
-      name: "University of Southern Alabama "
-    },
-    "69": {
-      lat: 34.021,
-      lng: -118.287,
-      name: "University of Southern California "
-    },
-    "70": {
-      lat: 28.055,
-      lng: -82.413,
-      name: "University of Southern Florida (USF)"
-    },
-    "71": {
-      lat: 29.584,
-      lng: -98.618,
-      name: "University of Texas, San Antonio (UTSA)"
-    },
-    "72": {
-      lat: 36.15,
-      lng: -95.946,
-      name: "University of Tulsa"
-    },
-    "73": {
-      lat: 38.032,
-      lng: -78.478,
-      name: "University of Virginia "
-    },
-    "74": {
-      lat: 37.547,
-      lng: -77.453,
-      name: "University of Virginia Commonwealth"
-    },
-    "75": {
-      lat: 47.654,
-      lng: -122.3,
-      name: "University of Washington "
-    },
-    "76": {
-      lat: 44.026,
-      lng: -88.551,
-      name: "University of Wisconsin - Oshkosh (formerly Fox Valley)"
-    },
-    "77": {
-      lat: 43.813,
-      lng: -91.236,
-      name: "University of Wisconsin, La Crosse"
-    },
-    "78": {
-      lat: 42.734,
-      lng: -90.493,
-      name: "University of Wisconsin Platteville "
-    },
-    "79": {
-      lat: 41.312,
-      lng: -105.583,
-      name: "University of Wyoming "
-    },
-    "80": {
-      lat: 36.149,
-      lng: -86.804,
-      name: "Vanderbilt University "
-    },
-    "81": {
-      lat: 37.266,
-      lng: -122.014,
-      name: "West Valley College"
-    },
-    "82": {
-      lat: 39.648,
-      lng: -79.971,
-      name: "West Virginia University "
-    },
-    "83": {
-      lat: 37.716,
-      lng: -97.296,
-      name: "Wichita State University "
-    },
-    "84": {
-      lat: 34.986,
-      lng: -80.443,
-      name: "Wingate University "
+      name: "Anchorage",
+      lat: 61.2180556,
+      lng: -149.9002778,
+      color: "default",
+      type: "circle"
     }
   },
   labels: {
@@ -1032,9 +800,5 @@ var simplemaps_usmap_mapdata={
       x: "665",
       y: "580"
     }
-  },
-  legend: {
-    entries: []
-  },
-  regions: {}
+  }
 };
