@@ -361,6 +361,11 @@ var simplemaps_usmap_mapdata={
       lat: 38.907,
       lng: -77.073,
       name: "Georgetown University "
+    },
+    "13": {
+      lat: 45.512,
+      lng: -122.684,
+      name: "Portland State University"
     }
   },
   labels: {
