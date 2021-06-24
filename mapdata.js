@@ -18,7 +18,7 @@ var simplemaps_usmap_mapdata={
     location_opacity: "1",
     location_hover_opacity: 1,
     location_url: "",
-    location_size: "15",
+    location_size: "20",
     location_type: "circle",
     location_image_source: "frog.png",
     location_border_color: "#FFFFFF",
@@ -71,7 +71,7 @@ var simplemaps_usmap_mapdata={
       inactive: "yes"
     },
     AK: {
-      name: "Alaska",
+      name: "AlaskaHawaii",
       inactive: "yes"
     },
     FL: {
@@ -366,6 +366,361 @@ var simplemaps_usmap_mapdata={
       lat: 45.512,
       lng: -122.684,
       name: "Portland State University"
+    },
+    "14": {
+      lat: 38.899,
+      lng: -77.049,
+      name: "George Washington University "
+    },
+    "15": {
+      lat: 32.427,
+      lng: -81.784,
+      name: "Georgia Southern University "
+    },
+    "16": {
+      lat: 33.51,
+      lng: -112.13,
+      name: "Grand Canyon University "
+    },
+    "17": {
+      lat: 21.307,
+      lng: -157.866,
+      name: "Hawai’i Pacific University "
+    },
+    "18": {
+      lat: 38.923,
+      lng: -77.022,
+      name: "Howard University"
+    },
+    "19": {
+      lat: 42.862,
+      lng: -112.433,
+      name: "Idaho State University"
+    },
+    "20": {
+      lat: 39.166,
+      lng: -86.527,
+      name: "Indiana University "
+    },
+    "21": {
+      lat: 41.148,
+      lng: -81.349,
+      name: "Kent State University"
+    },
+    "22": {
+      lat: 40.374,
+      lng: -82.396,
+      name: "Kenyon College"
+    },
+    "23": {
+      lat: 44.259,
+      lng: -88.396,
+      name: "Lawrence University "
+    },
+    "24": {
+      lat: 38.788,
+      lng: -90.502,
+      name: "Lindenwood University "
+    },
+    "25": {
+      lat: 40.809,
+      lng: -73.802,
+      name: "Maritime College"
+    },
+    "26": {
+      lat: 41.724,
+      lng: -73.934,
+      name: "Marist College"
+    },
+    "27": {
+      lat: 30.181,
+      lng: -93.218,
+      name: "McNeese State University "
+    },
+    "28": {
+      lat: 35.844,
+      lng: -86.371,
+      name: "Middle Tennessee State University "
+    },
+    "29": {
+      lat: 33.456,
+      lng: -88.795,
+      name: "Mississippi State University "
+    },
+    "30": {
+      lat: 45.671,
+      lng: -111.05,
+      name: "Montana State University "
+    },
+    "31": {
+      lat: 40.857,
+      lng: -74.199,
+      name: "Montclair State University "
+    },
+    "32": {
+      lat: 41.511,
+      lng: -74.012,
+      name: "Mount Saint Mary College"
+    },
+    "33": {
+      lat: 35.785,
+      lng: -78.643,
+      name: "NC State University "
+    },
+    "34": {
+      lat: 35.194,
+      lng: -111.65,
+      name: "Northern Arizona University "
+    },
+    "35": {
+      lat: 40.006,
+      lng: -83.016,
+      name: "Ohio State University "
+    },
+    "36": {
+      lat: 44.565,
+      lng: -123.28,
+      name: "Oregon State University "
+    },
+    "37": {
+      lat: 40.794,
+      lng: -77.861,
+      name: "Penn State University "
+    },
+    "38": {
+      lat: 35.189,
+      lng: -80.833,
+      name: "Queens University of Charlotte"
+    },
+    "39": {
+      lat: 29.721,
+      lng: -95.394,
+      name: "Rice University "
+    },
+    "40": {
+      lat: 40.501,
+      lng: -74.449,
+      name: "Rutgers University "
+    },
+    "41": {
+      lat: 38.561,
+      lng: -121.424,
+      name: "Sacramento State University "
+    },
+    "42": {
+      lat: 37.334,
+      lng: -121.881,
+      name: "San Jose State University "
+    },
+    "43": {
+      lat: 40.743,
+      lng: -74.247,
+      name: "Seton Hall University "
+    },
+    "44": {
+      lat: 39.98,
+      lng: -75.157,
+      name: "Temple University "
+    },
+    "45": {
+      lat: 32.824,
+      lng: -96.79,
+      name: "Southern Methodist University (SMU)"
+    },
+    "46": {
+      lat: 37.677,
+      lng: -113.068,
+      name: "Southern Utah University "
+    },
+    "47": {
+      lat: 30.617,
+      lng: -96.336,
+      name: "Texas A&M "
+    },
+    "48": {
+      lat: 29.937,
+      lng: -90.122,
+      name: "Tulane University "
+    },
+    "49": {
+      lat: 36.063,
+      lng: -94.158,
+      name: "University of Arkansas"
+    },
+    "50": {
+      lat: 37.871,
+      lng: -122.26,
+      name: "University of California, Berkley"
+    },
+    "51": {
+      lat: 53.031,
+      lng: 8.216,
+      name: "University of Colorado"
+    },
+    "52": {
+      lat: 41.81,
+      lng: -72.253,
+      name: "University of Connecticut"
+    },
+    "53": {
+      lat: 29.645,
+      lng: -82.35,
+      name: "University of Florida"
+    },
+    "54": {
+      lat: 29.719,
+      lng: -95.338,
+      name: "University of Houston "
+    },
+    "55": {
+      lat: 38.215,
+      lng: -85.762,
+      name: "University of Louisville"
+    },
+    "56": {
+      lat: 25.713,
+      lng: -80.277,
+      name: "University of Miami"
+    },
+    "57": {
+      lat: 42.276,
+      lng: -83.741,
+      name: "University of Michigan"
+    },
+    "58": {
+      lat: 44.976,
+      lng: -93.231,
+      name: "University of Minnesota"
+    },
+    "59": {
+      lat: 47.802,
+      lng: -96.611,
+      name: "University of Minnesota, Crookston"
+    },
+    "60": {
+      lat: 46.861,
+      lng: -113.981,
+      name: "University of Montana"
+    },
+    "61": {
+      lat: 36.066,
+      lng: -79.813,
+      name: "University of North Carolina, Greensboro (UNCG)"
+    },
+    "62": {
+      lat: 34.226,
+      lng: -77.88,
+      name: "University of North Carolina, Wilmington "
+    },
+    "63": {
+      lat: 47.924,
+      lng: -97.081,
+      name: "University of North Dakota"
+    },
+    "64": {
+      lat: 41.699,
+      lng: -86.238,
+      name: "University of Notre Dame "
+    },
+    "65": {
+      lat: 35.21,
+      lng: -97.446,
+      name: "University of Oklahoma "
+    },
+    "66": {
+      lat: 44.046,
+      lng: -123.07,
+      name: "University of Oregon "
+    },
+    "67": {
+      lat: 45.766,
+      lng: -93.483,
+      name: "University of South Carolina "
+    },
+    "68": {
+      lat: 30.695,
+      lng: -88.174,
+      name: "University of Southern Alabama "
+    },
+    "69": {
+      lat: 34.021,
+      lng: -118.287,
+      name: "University of Southern California "
+    },
+    "70": {
+      lat: 28.055,
+      lng: -82.413,
+      name: "University of Southern Florida (USF)"
+    },
+    "71": {
+      lat: 29.584,
+      lng: -98.618,
+      name: "University of Texas, San Antonio (UTSA)"
+    },
+    "72": {
+      lat: 36.15,
+      lng: -95.946,
+      name: "University of Tulsa"
+    },
+    "73": {
+      lat: 38.032,
+      lng: -78.478,
+      name: "University of Virginia "
+    },
+    "74": {
+      lat: 37.547,
+      lng: -77.453,
+      name: "University of Virginia Commonwealth"
+    },
+    "75": {
+      lat: 47.654,
+      lng: -122.3,
+      name: "University of Washington "
+    },
+    "76": {
+      lat: 44.026,
+      lng: -88.551,
+      name: "University of Wisconsin - Oshkosh (formerly Fox Valley)"
+    },
+    "77": {
+      lat: 43.813,
+      lng: -91.236,
+      name: "University of Wisconsin, La Crosse"
+    },
+    "78": {
+      lat: 42.734,
+      lng: -90.493,
+      name: "University of Wisconsin Platteville "
+    },
+    "79": {
+      lat: 41.312,
+      lng: -105.583,
+      name: "University of Wyoming "
+    },
+    "80": {
+      lat: 36.149,
+      lng: -86.804,
+      name: "Vanderbilt University "
+    },
+    "81": {
+      lat: 37.266,
+      lng: -122.014,
+      name: "West Valley College"
+    },
+    "82": {
+      lat: 39.648,
+      lng: -79.971,
+      name: "West Virginia University "
+    },
+    "83": {
+      lat: 37.716,
+      lng: -97.296,
+      name: "Wichita State University "
+    },
+    "84": {
+      lat: 34.986,
+      lng: -80.443,
+      name: "Wingate University "
     }
   },
   labels: {
